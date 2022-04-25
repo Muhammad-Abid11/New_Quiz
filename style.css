@@ -1,0 +1,18 @@
+#btnCnt {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#main {
+    text-align: center
+}
+
+#btnNext {
+    text-align: center;
+    width: 70px !important;
+
+}
+
+.hide {
+    display: none;
+}
