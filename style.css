@@ -1,10 +1,20 @@
-#content{
-    height: 500px;
-    
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-color: rgb(122, 125, 128);
+}
+#btnCnt{
+    width: 50%;
 }
 .btn_even:hover{
     background-color: rgb(60, 104, 104);
     color: aliceblue;
+}
+.btn{
+    border-radius: 10px;
+    width:40%;
+    border-style: ;
+    /* background-color: blue; */
 }
 .btn_odd:hover{
     color: aliceblue;
@@ -33,4 +43,14 @@
 }
 span {
     color: greenyellow;
+}
+
+@media only screen and (max-width: 600px) {
+    body {   
+        font-size:15px;
+        background-color: lightblue;
+    }
+    #btnCnt{
+        width:auto
+    }
 }
