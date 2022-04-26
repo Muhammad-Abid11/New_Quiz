@@ -13,6 +13,12 @@
 
 }
 
-.hide {
+#content_hide,#result_hide {
     display: none;
+}
+#result_display{
+    display: block;
+}
+span {
+    color: greenyellow;
 }

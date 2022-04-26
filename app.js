@@ -53,14 +53,15 @@ var qArray = [
 var count = 0;
 var score = 0;
 var num = qArray.length;
-
+var wrong = 0;
 next = (e) => {
     if (qArray[count].answer === e.innerHTML) {
-        console.log("next working")
+        // console.log("next working")
         score++;
     }
     else (
-        console.log("Failed")
+        // console.log("Failed")
+        wrong++
     )
     count++;
     if (count < num) {
@@ -73,7 +74,7 @@ next = (e) => {
 }
 
 showQuestion = () => {
-    console.log("start show question working " + count)
+    // console.log("start show question working " + count)
 
     //Question Text
     var question = document.getElementById("question");
@@ -83,7 +84,7 @@ showQuestion = () => {
     for (var i = 0; i <= 3; i++) {
         options[i].innerHTML = qArray[count].options[i];
     }
-    console.log("show question working " + count)
+    // console.log("show question working " + count)
 
 }
 
@@ -91,12 +92,13 @@ showQuestion = () => {
 clearScreen = () => {
 
     var content = document.getElementById("content");
-    content.setAttribute("id", "hide");
+    content.setAttribute("id", "content_hide");
     // Result Display
+    var result_hide = document.getElementById("result_hide");
+    result_hide.setAttribute("id", "result_display");
     var heading = document.getElementById("heading");
-    var h1 = document.createElement("h1");
-    var h1Text = document.createTextNode("Result");
-    h1.appendChild(h1Text);
-    heading.appendChild(h1);
-
+    var h4 = document.createElement("h4");
+    var text_h4 = document.createTextNode("You got the " + score + " out of " + qArray.length);
+    h4.appendChild(text_h4);
+    heading.appendChild(h4);
 }
