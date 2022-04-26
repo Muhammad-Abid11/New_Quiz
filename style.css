@@ -1,3 +1,15 @@
+#content{
+    height: 500px;
+    
+}
+.btn_even:hover{
+    background-color: rgb(60, 104, 104);
+    color: aliceblue;
+}
+.btn_odd:hover{
+    color: aliceblue;
+    background-color: rgb(98, 98, 104);
+}
 #btnCnt {
     display: flex;
     justify-content: space-evenly;

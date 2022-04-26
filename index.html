@@ -11,17 +11,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="showQuestion()">
+<body onload="showQuestion()" class="bg-dark">
 
     <div id="content">
         <div class="bg-light w-50 mx-auto mt-5 container " id="main">
             <p><b id="question">Question</b></p>
         </div>
-        <div class="bg-light w-50 mx-auto mt-5 container " id="btnCnt">
-            <button class="btn-primary btn" id="option1" onclick="next(this)">option 1</button>
-            <button class="btn-primary btn" id="option2" onclick="next(this)">option 2</button>
-            <button class="btn-primary btn" id="option3" onclick="next(this)">option 3</button>
-            <button class="btn-primary btn" id="option4" onclick="next(this)">option 4</button>
+        <div class="bg-light w-50  mt-5 container " id="btnCnt">
+            <button class="btn-light btn btn_odd" id="option1" onclick="next(this)">option 1</button>
+            <button class="btn-Secondary btn btn_even" id="option2" onclick="next(this)">option 2</button>
+            <button class="btn-light btn btn_odd" id="option3" onclick="next(this)">option 3</button>
+            <button class="btn-Secondary btn btn_even" id="option4" onclick="next(this)">option 4</button>
         </div>
     </div>
 
